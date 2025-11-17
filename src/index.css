@@ -1,0 +1,14 @@
+/* Inject Tailwind base layers */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Ensure full height and use a clean font stack */
+  html, body, #root {
+    height: 100%;
+    margin: 0;
+    /* Use Inter which is imported via Tailwind config */
+    @apply font-sans; 
+  }
+}
